@@ -13,6 +13,7 @@ import { useState } from "react";
 
 export default function Home() {
   const [isScrolled, setIsScrolled] = useState(false);
+  const apkUrl = `${import.meta.env.BASE_URL}Maxtip.apk`;
 
   // Scroll listener for header background
   if (typeof window !== "undefined") {
@@ -51,7 +52,7 @@ export default function Home() {
               Confianza
             </a>
           </nav>
-          <a href="/Maxtip.apk" download className="inline-flex items-center justify-center bg-emerald-600 hover:bg-emerald-700 text-white font-medium px-4 py-2 rounded">
+          <a href={apkUrl} download className="inline-flex items-center justify-center bg-emerald-600 hover:bg-emerald-700 text-white font-medium px-4 py-2 rounded">
             Descargar App
           </a>
         </div>
@@ -86,7 +87,7 @@ export default function Home() {
                 futbol. Apuestas seguras, resultados comprobados.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                <a href="/Maxtip.apk" download className="inline-flex items-center justify-center bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-base px-8 py-6 rounded-lg h-auto shadow-lg hover:shadow-xl transition-all">
+                <a href={apkUrl} download className="inline-flex items-center justify-center bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-base px-8 py-6 rounded-lg h-auto shadow-lg hover:shadow-xl transition-all">
                   Descargar Ahora
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </a>
@@ -250,7 +251,7 @@ export default function Home() {
               Descarga MaxTips y accede a predicciones premium. Tu primer analisis es gratis.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="/Maxtip.apk" download className="inline-flex items-center justify-center bg-white text-emerald-600 hover:bg-slate-100 font-bold text-base px-8 py-6 rounded-lg h-auto shadow-lg">
+              <a href={apkUrl} download className="inline-flex items-center justify-center bg-white text-emerald-600 hover:bg-slate-100 font-bold text-base px-8 py-6 rounded-lg h-auto shadow-lg">
                 Descargar para Android
                 <ArrowRight className="ml-2 h-5 w-5" />
               </a>
